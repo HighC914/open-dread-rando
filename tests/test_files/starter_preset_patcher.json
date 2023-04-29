@@ -8,6 +8,11 @@
         "ITEM_WEAPON_MISSILE_MAX": 15,
         "ITEM_SONAR": 1,
         "ITEM_FLOOR_SLIDE": 1,
+        "ITEM_WEAPON_CHARGE_BEAM": 1,
+        "ITEM_WEAPON_SUPER_MISSILE": 1,
+        "ITEM_MORPH_BALL": 1,
+        "ITEM_WEAPON_BOMB": 1,
+        "ITEM_SPACE_JUMP": 1,
         "ITEM_RANDO_ARTIFACT_4": 1,
         "ITEM_RANDO_ARTIFACT_5": 1,
         "ITEM_RANDO_ARTIFACT_6": 1,
@@ -24,10 +29,10 @@
     "pickups": [
         {
             "pickup_type": "actor",
-            "caption": "Morph Ball acquired.",
+            "caption": "Cross Bomb acquired.",
             "resources": [
                 {
-                    "item_id": "ITEM_MORPH_BALL",
+                    "item_id": "ITEM_WEAPON_LINE_BOMB",
                     "quantity": 1
                 }
             ],
@@ -37,7 +42,7 @@
                 "actor": "ItemSphere_ChargeBeam"
             },
             "model": [
-                "powerup_morphball"
+                "powerup_crossbomb"
             ],
             "map_icon": {
                 "icon_id": "powerup_morphball",
@@ -50,11 +55,11 @@
         },
         {
             "pickup_type": "actor",
-            "caption": "Missile Tank acquired.\nMissile capacity increased by 2.",
+            "caption": "Ice Missile acquired",
             "resources": [
                 {
-                    "item_id": "ITEM_WEAPON_MISSILE_MAX",
-                    "quantity": 2
+                    "item_id": "ITEM_WEAPON_ICE_MISSILE",
+                    "quantity": 1
                 }
             ],
             "pickup_actor": {
@@ -63,10 +68,10 @@
                 "actor": "Item_MissileTank011"
             },
             "model": [
-                "item_missiletank"
+                "powerup_icemissile"
             ],
             "map_icon": {
-                "icon_id": "item_missiletank"
+                "icon_id": "PROGRESSIVE_MISSILE"
             }
         },
         {
@@ -92,11 +97,11 @@
         },
         {
             "pickup_type": "actor",
-            "caption": "Missile+ Tank acquired.\nMissile capacity increased by 10.",
+            "caption": "Ice Missile acquired",
             "resources": [
                 {
-                    "item_id": "ITEM_WEAPON_MISSILE_MAX",
-                    "quantity": 10
+                    "item_id": "ITEM_WEAPON_ICE_MISSILE",
+                    "quantity": 1
                 }
             ],
             "pickup_actor": {
@@ -105,10 +110,10 @@
                 "actor": "Item_EnergyTank001"
             },
             "model": [
-                "item_missiletankplus"
+                "powerup_icemissile"
             ],
             "map_icon": {
-                "icon_id": "item_missiletankplus"
+                "icon_id": "PROGRESSIVE_MISSILE"
             }
         },
         {
@@ -495,11 +500,11 @@
         },
         {
             "pickup_type": "actor",
-            "caption": "Missile+ Tank acquired.\nMissile capacity increased by 10.",
+            "caption": "Ice Missile acquired",
             "resources": [
                 {
-                    "item_id": "ITEM_WEAPON_MISSILE_MAX",
-                    "quantity": 10
+                    "item_id": "ITEM_WEAPON_ICE_MISSILE",
+                    "quantity": 1
                 }
             ],
             "pickup_actor": {
@@ -508,10 +513,10 @@
                 "actor": "item_missiletank_004"
             },
             "model": [
-                "item_missiletankplus"
+                "powerup_icemissile"
             ],
             "map_icon": {
-                "icon_id": "item_missiletankplus"
+                "icon_id": "PROGRESSIVE_MISSILE"
             }
         },
         {
@@ -4230,7 +4235,6 @@
         "lava": 20
     },
     "game_patches": {
-        "raven_beak_damage_table_handling": "consistent_low",
         "remove_grapple_blocks_hanubia_shortcut": true,
         "remove_grapple_block_path_to_itorash": true,
         "default_x_released": false
