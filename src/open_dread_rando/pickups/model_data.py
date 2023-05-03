@@ -523,7 +523,7 @@ ALL_MODEL_DATA: dict[str, ModelData] = {
         ),
         transform=Transform(
             scale=(2, 2, 2),
-            position=(0.0, 50.0, 0.0),
+            position=(0.0, 40.0, 0.0),
         ),
     ),
 
