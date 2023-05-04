@@ -136,12 +136,12 @@ ALL_MODEL_DATA: dict[str, ModelData] = {
     ),
 
     "powerup_icemissile": ModelData(
-        bcmdl_path="actors/weapons/icemissile/models/icemissile.bcmdl",
-        bmsas="actors/weapons/icemissile/charclasses/icemissile.bmsas",
+        bcmdl_path="actors/items/powerup_supermissile/models/powerup_ice__missile.bcmdl",
+        bmsas="actors/items/powerup_supermissile/charclasses/powerup_supermissile.bmsas",
         dependencies=(
-            "actors/weapons/icemissile/models/icemissile.bcmdl",
+            "actors/items/powerup_supermissile/models/powerup_ice__missile.bcmdl",
             "actors/items/powerup_supermissile/models/imats/powerup_supermissile_hologram.bsmat",
-            "actors/weapons/icemissile/models/imats/icemissile_mp_opaque_01.bsmat",
+            "actors/items/powerup_supermissile/models/imats/powerup_ice__missile_mp_opaque_01.bsmat",
         ),
         transform=Transform(
             scale=(2, 2, 2),
