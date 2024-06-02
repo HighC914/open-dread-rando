@@ -116,12 +116,17 @@ ALL_MODEL_DATA: dict[str, ModelData] = {
     ),
 
     "powerup_missile": ModelData(
-        bcmdl_path="actors/items/powerup_supermissile/models/powerup_missile.bcmdl",
-        bmsas="actors/items/powerup_supermissile/charclasses/powerup_supermissile.bmsas",
+        bcmdl_path="actors/weapons/missile/models/missile.bcmdl",
+        bmsas="actors/weapons/missile/charclasses/missile.bmsas",
         dependencies=(
-            "actors/items/powerup_supermissile/models/powerup_missile.bcmdl",
+            "actors/weapons/missile/models/missile.bcmdl",
             "actors/items/powerup_supermissile/models/imats/powerup_supermissile_hologram.bsmat",
-            "actors/items/powerup_supermissile/models/imats/powerup_missile_mp_opaque_01.bsmat",
+            "actors/weapons/missile/models/imats/missile_mat01.bsmat",
+        ),
+        transform=Transform(
+            scale=(1.7, 1.7, 1.7),
+            position=(0.0, 50.0, 0.0),
+            angle=(0.0, 90.0, 0.0),
         ),
     ),
 
@@ -136,12 +141,12 @@ ALL_MODEL_DATA: dict[str, ModelData] = {
     ),
 
     "powerup_icemissile": ModelData(
-        bcmdl_path="actors/items/powerup_supermissile/models/powerup_ice__missile.bcmdl",
-        bmsas="actors/items/powerup_supermissile/charclasses/powerup_supermissile.bmsas",
+        bcmdl_path="actors/weapons/icemissile/models/icemissile.bcmdl",
+        bmsas="actors/weapons/icemissile/charclasses/icemissile.bmsas",
         dependencies=(
-            "actors/items/powerup_supermissile/models/powerup_ice__missile.bcmdl",
+            "actors/weapons/icemissile/models/icemissile.bcmdl",
             "actors/items/powerup_supermissile/models/imats/powerup_supermissile_hologram.bsmat",
-            "actors/items/powerup_supermissile/models/imats/powerup_ice__missile_mp_opaque_01.bsmat",
+            "actors/weapons/icemissile/models/imats/icemissile_mp_opaque_01.bsmat",
         ),
         transform=Transform(
             scale=(2, 2, 2),
